@@ -652,6 +652,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 col-12">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="d8c99d35-eedf-4f66-862c-542f3bed5698">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
                 >Full Name</label
@@ -661,6 +663,7 @@
                 class="form-control input-fields"
                 id="exampleFormControlInput1"
                 placeholder="First And Last Name"
+                name="name"
               />
             </div>
             <div class="mb-3">
@@ -672,6 +675,7 @@
                 class="form-control input-fields"
                 id="exampleFormControlInput1"
                 placeholder="name@example.com"
+                name="email"
               />
             </div>
             <div class="mb-3">
@@ -683,6 +687,7 @@
                 class="form-control input-fields"
                 id="exampleFormControlInput1"
                 placeholder="Company Name"
+                name="Company-name"
               />
             </div>
             <div class="mb-3">
@@ -694,6 +699,7 @@
                 class="form-control input-fields"
                 id="exampleFormControlInput1"
                 placeholder="eg. WebApp , E-commerce,Portfolio"
+                name="project-type"
               />
             </div>
             <div class="mb-3">
@@ -705,9 +711,11 @@
                 id="exampleFormControlTextarea1"
                 placeholder="Tell Me About You're Project Requirements And Goals"
                 rows="3"
+                name="message"
               ></textarea>
             </div>
             <button class="btn btn-primary ms-end" type="submit">Submit</button>
+          </form>
           </div>
         </div>
       </div>
