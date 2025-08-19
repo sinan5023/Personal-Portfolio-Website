@@ -652,70 +652,97 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 col-12">
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <input type="hidden" name="access_key" value="d8c99d35-eedf-4f66-862c-542f3bed5698">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Full Name</label
-              >
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              id="form"
+            >
               <input
-                type="text"
-                class="form-control input-fields"
-                id="exampleFormControlInput1"
-                placeholder="First And Last Name"
-                name="name"
+                type="hidden"
+                name="access_key"
+                value="d8c99d35-eedf-4f66-862c-542f3bed5698"
               />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Email address</label
-              >
-              <input
-                type="email"
-                class="form-control input-fields"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-                name="email"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Company Name (optional)</label
-              >
-              <input
-                type="text"
-                class="form-control input-fields"
-                id="exampleFormControlInput1"
-                placeholder="Company Name"
-                name="Company-name"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Project Type (optional)</label
-              >
-              <input
-                type="text"
-                class="form-control input-fields"
-                id="exampleFormControlInput1"
-                placeholder="eg. WebApp , E-commerce,Portfolio"
-                name="project-type"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >You're Message</label
-              >
-              <textarea
-                class="form-control input-fields"
-                id="exampleFormControlTextarea1"
-                placeholder="Tell Me About You're Project Requirements And Goals"
-                rows="3"
-                name="message"
-              ></textarea>
-            </div>
-            <button class="btn btn-primary ms-end" type="submit">Submit</button>
-          </form>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control input-fields"
+                  id="name"
+                  placeholder="First And Last Name"
+                  name="name"
+                />
+                <span id="name-error" style="color: rgb(255, 0, 0, 0.8)"></span>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="text"
+                  class="form-control input-fields"
+                  id="email"
+                  placeholder="name@example.com"
+                  name="email"
+                />
+                <span
+                  id="email-error"
+                  style="color: rgb(255, 0, 0, 0.8)"
+                ></span>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Company Name (optional)</label
+                >
+                <input
+                  type="text"
+                  class="form-control input-fields"
+                  id="company-name"
+                  placeholder="Company Name"
+                  name="Company-name"
+                />
+                <span
+                  id="company-name-error"
+                  style="color: rgb(255, 0, 0, 0.8)"
+                ></span>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Project Type (optional)</label
+                >
+                <input
+                  type="text"
+                  class="form-control input-fields"
+                  id="project-type"
+                  placeholder="eg. WebApp , E-commerce,Portfolio"
+                  name="project-type"
+                />
+                <span
+                  id="project-error"
+                  style="color: rgb(255, 0, 0, 0.8)"
+                ></span>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >You're Message</label
+                >
+                <textarea
+                  class="form-control input-fields"
+                  id="message"
+                  placeholder="Tell Me About You're Project Requirements And Goals"
+                  rows="3"
+                  name="message"
+                ></textarea>
+                 <span
+                  id="message-error"
+                  style="color: rgb(0, 255, 0, 0.8)"
+                ></span>
+              </div>
+              <button class="btn btn-primary ms-end" type="submit">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -728,8 +755,20 @@
               href="https://github.com/sinan5023"
               style="text-decoration: none"
             >
-              <i class="bi bi-github" style="color: white !important;display: inline-block !important;"></i
-              ><span style="color: white; opacity: 0.5; padding-left: 0.5rem;display: inline-block;"
+              <i
+                class="bi bi-github"
+                style="
+                  color: white !important;
+                  display: inline-block !important;
+                "
+              ></i
+              ><span
+                style="
+                  color: white;
+                  opacity: 0.5;
+                  padding-left: 0.5rem;
+                  display: inline-block;
+                "
                 >Github</span
               >
             </a>
@@ -739,8 +778,20 @@
               href="https://www.linkedin.com/in/mohammed-sinan-569335286/"
               style="text-decoration: none"
             >
-              <i class="bi bi-twitter-x" style="color: white !important;display: inline-block !important;"></i
-              ><span style="color: white; opacity: 0.5; padding-left: 0.5rem;display: inline-block;"
+              <i
+                class="bi bi-twitter-x"
+                style="
+                  color: white !important;
+                  display: inline-block !important;
+                "
+              ></i
+              ><span
+                style="
+                  color: white;
+                  opacity: 0.5;
+                  padding-left: 0.5rem;
+                  display: inline-block;
+                "
                 >Twitter</span
               >
             </a>
@@ -750,8 +801,20 @@
               href="https://www.linkedin.com/in/mohammed-sinan-569335286/"
               style="text-decoration: none"
             >
-              <i class="bi bi-linkedin" style="color: white !important;display: inline-block !important;"></i
-              ><span style="color: white; opacity: 0.5; padding-left: 0.5rem;display: inline-block;"
+              <i
+                class="bi bi-linkedin"
+                style="
+                  color: white !important;
+                  display: inline-block !important;
+                "
+              ></i
+              ><span
+                style="
+                  color: white;
+                  opacity: 0.5;
+                  padding-left: 0.5rem;
+                  display: inline-block;
+                "
                 >Linkedin</span
               >
             </a>
